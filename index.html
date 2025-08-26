@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGMI UC Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>BGMI UC Store</h1>
+  </header>
+
+  <main>
+    <section class="verify">
+      <h2>Enter BGMI ID</h2>
+      <input type="text" id="bgmiId" placeholder="Enter your BGMI ID">
+      <button onclick="verifyId()">Verify</button>
+      <p id="verifyMessage"></p>
+    </section>
+
+    <section class="packages" id="packages" style="display:none;">
+      <h2>Select UC Package</h2>
+      <div class="package-list">
+        <div class="package" onclick="selectPackage(60)">60 UC - ₹75</div>
+        <div class="package" onclick="selectPackage(325)">325 UC - ₹380</div>
+        <div class="package" onclick="selectPackage(660)">660 UC - ₹750</div>
+        <div class="package" onclick="selectPackage(1800)">1800 UC - ₹2100</div>
+      </div>
+    </section>
+  </main>
+
+  <div id="paymentModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Scan & Pay</h2>
+      <img src="qr.png" alt="QR Code" class="qr">
+      <p>Or pay using UPI ID: <b>shariff.12@superyes</b></p>
+      <a class="pay-btn" href="upi://pay?pa=shariff.12@superyes&pn=BGMI%20Store" target="_blank">Pay Now</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

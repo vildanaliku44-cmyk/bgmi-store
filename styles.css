@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #121212;
+  color: white;
+  text-align: center;
+}
+header {
+  background: #1f1f1f;
+  padding: 15px;
+  font-size: 24px;
+}
+.verify, .packages {
+  margin: 20px;
+}
+input {
+  padding: 10px;
+  width: 60%;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+button {
+  padding: 10px 20px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #e68900;
+}
+.package-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.package {
+  background: #1e1e1e;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.package:hover {
+  background: #ff9800;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+.modal-content {
+  background: #222;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+.qr {
+  width: 200px;
+  margin: 20px auto;
+}
+.pay-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.pay-btn:hover {
+  background: #45a049;
+}
